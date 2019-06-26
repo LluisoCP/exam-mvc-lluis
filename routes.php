@@ -14,7 +14,11 @@ $router->get('/contact', 'PagesController@contact');
 
 
 // example.com/articles
-$router->get('/articles', 'ArticlesController@index');
+$router->get('/logements', 'LogementsController@index');
+$router->get('/logement/{id}', 'LogementsController@show');
+
+$router->get( '/ajouter-logement','LogementsController@add');
+$router->post('/ajouter-logement', 'LogementsController@save');
 
 
 // Run it!

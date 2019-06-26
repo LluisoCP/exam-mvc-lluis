@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php require 'partials/_navbar.php' ?>
+    <?php require '_partials/_navbar.php' ?>
     <?= $content ?>
 
 </body>
